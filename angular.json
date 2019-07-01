@@ -24,6 +24,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/admin-lte/dist/css/AdminLTE.min.css",
+              "src/assets/css/dashboard.css",
+              "src/assets/css/skins/skin-blue.css",
               "src/styles.css"
             ],
             "scripts": []

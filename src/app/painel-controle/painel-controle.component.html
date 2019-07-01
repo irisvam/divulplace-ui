@@ -1,0 +1,565 @@
+
+
+<!-- Main content -->
+<section class="content container-fluid">
+	<!-- /.row -->
+
+	<!-- Small boxes (Stat box) -->
+	<div class="row">
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-aqua"
+				popoverTitle="Valor Possível"
+				popover="Valor total estimado se todos os afiliados estiverem ativos até o próximo fechamento do mês."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>15.000
+					</h3>
+
+					<p>Valor Possível</p>
+				</div>
+				<div class="icon">
+					<i class="ion ion-stats-bars"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-aqua"
+				popoverTitle="Valor Comissões"
+				popover="Valor estimado referente as comissões se todos os afiliados estiverem ativos até o próximo fechamento do mês."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>350
+					</h3>
+
+					<p>Valor Comissões</p>
+				</div>
+				<div class="icon">
+					<i class="fa fa-comments-o"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-aqua" 
+				popoverTitle="Valor Bônus"
+				popover="Valor estimado referente aos bônus se todos os afiliados estiverem ativos até o pr�ximo fechamento do mês."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>320
+					</h3>
+
+					<p>Valor Bônus</p>
+				</div>
+				<div class="icon">
+					<i class="fa fa-gift"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-aqua" 
+				popoverTitle="Valor Pendente"
+				popover="Valor estimado referente aos afiliados que ainda não confirmaram suas situações como ativas até o momento."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>850
+					</h3>
+
+					<p>Valor Pendente</p>
+				</div>
+				<div class="icon">
+					<i class="fa fa-flag-o"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-blue" 
+				popoverTitle="Valor Total"
+				popover="Valor calculado até o momento referente aos afiliados que j� confirmaram suas situações como ativas até o momento."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>2.200
+					</h3>
+
+					<p>Valor Total</p>
+				</div>
+				<div class="icon">
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-2 col-sm-4 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-green" 
+				popoverTitle="Valor Disponível"
+				popover="Valor já disponível para solicitação de saque desde o último fechamento."
+				placement="bottom" 
+				triggers="mouseenter:mouseleave"
+				>
+				<div class="inner">
+					<h3>
+						<sup style="font-size: 20px">R$</sup>1.600
+					</h3>
+
+					<p>Valor Disponível</p>
+				</div>
+				<div class="icon">
+					<i class="fa fa-check"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./col -->
+	</div>
+	<!-- /.row -->
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box">
+				<div class="box-header with-border">
+					<h3 class="box-title">Gráfico de Ganhos Semestrais</h3>
+
+					<div class="box-tools pull-right"></div>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<div class="row">
+						<div class="col-md-8">
+							<p class="text-center">
+								<strong>1 Jan, 2014 - 30 Jul, 2014</strong>
+							</p>
+
+							<div class="chart">
+								<!-- Sales Chart Canvas -->
+								<canvas id="salesChart" style="height: 180px;"></canvas>
+							</div>
+							<!-- /.chart-responsive -->
+						</div>
+						<!-- /.col -->
+						<div class="col-md-4">
+							<p class="text-center">
+								<strong>Comparações Medianas</strong>
+							</p>
+
+							<div class="progress-group">
+								<span class="progress-text">Afiliados Novos</span> <span
+									class="progress-number"><b>3</b>/10</span>
+
+								<div class="progress sm">
+									<div class="progress-bar progress-bar-aqua" style="width: 70%"></div>
+								</div>
+							</div>
+							<!-- /.progress-group -->
+							<div class="progress-group">
+								<span class="progress-text">Afiliados Ativos</span> <span
+									class="progress-number"><b>8</b>/10</span>
+
+								<div class="progress sm">
+									<div class="progress-bar progress-bar-red" style="width: 80%"></div>
+								</div>
+							</div>
+							<!-- /.progress-group -->
+							<div class="progress-group">
+								<span class="progress-text">Pagamentos dos Afiliados</span> <span
+									class="progress-number"><b>90</b>/100</span>
+
+								<div class="progress sm">
+									<div class="progress-bar progress-bar-green" style="width: 90%"></div>
+								</div>
+							</div>
+							<!-- /.progress-group -->
+							<div class="progress-group">
+								<span class="progress-text">Capitação de Afiliados</span> <span
+									class="progress-number"><b>75</b>/100</span>
+
+								<div class="progress sm">
+									<div class="progress-bar progress-bar-yellow"
+										style="width: 75%"></div>
+								</div>
+							</div>
+							<!-- /.progress-group -->
+						</div>
+						<!-- /.col -->
+					</div>
+					<!-- /.row -->
+				</div>
+			</div>
+			<!-- /.box -->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box box-info">
+						<div class="box-header with-border">
+							<h3 class="box-title">Pagamento</h3>
+						</div>
+						<div class="box-body text-center">
+							<input type="text" class="knob" value="10" data-linecap="round"
+								data-width="220" data-height="220" data-min="1" data-max="31"
+								data-fgColor="#3c8dbc" data-readonly="true">
+						</div>
+						<div class="box-footer no-padding"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box box-primary">
+						<div class="box-header with-border">
+							<h3 class="box-title">Modelo de Cartão</h3>
+						</div>
+						<div class="box-body">
+							<div class="col-md-12">
+								<img class="img-responsive" src="assets/img/cartao.jpg"
+									alt="Cart�o de Visitas">
+							</div>
+						</div>
+						<div class="box-footer no-padding text-center">
+							<button type="button" class="btn btn-sm btn-success">
+								<i class="fa fa-download"></i> Baixar
+							</button>
+							<button type="button" class="btn btn-sm btn-success">
+								<i class="fa fa-file-o"></i> Novo
+							</button>
+							<button type="button" class="btn btn-sm btn-primary"
+								style="margin-right: 5px;">
+								<i class="fa fa-edit"></i> Editar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box box-warning">
+				<div class="box-header with-border">
+					<h3 class="box-title">Vídeos Sugeridos</h3>
+				</div>
+				<div class="box-body">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" data-toggle="modal" data-target="#modal-default">
+								<img class="img-responsive" src="assets/img/750x450.png"
+								alt="Vídeo 01">
+							</a>
+							<dl>
+								<dt>Vídeo 01</dt>
+								<dd>Descrição para o vídeo 01</dd>
+							</dl>
+						</div>
+						<div class="col-md-6">
+							<a href="#" data-toggle="modal" data-target="#modal-default">
+								<img class="img-responsive" src="assets/img/750x450.png"
+								alt="Vídeo 01">
+							</a>
+							<dl>
+								<dt>Vídeo 02</dt>
+								<dd>Descrição para o vídeo 02</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="box-footer no-padding"></div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box box-default">
+				<div class="box-header with-border">
+					<h3 class="box-title">Atividades Recentes</h3>
+				</div>
+				<div class="box-body">
+					<ul class="timeline">
+						<!-- timeline time label -->
+						<li class="time-label"><span class="bg-red"> 10 Feb.
+								2014 </span></li>
+						<!-- /.timeline-label -->
+						<!-- timeline item -->
+						<li>
+							<!-- timeline icon --> <i class="fa fa-envelope bg-blue"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+								<h3 class="timeline-header">
+									<a href="#">Mensagem Nova</a> ...
+								</h3>
+								<div class="timeline-body">Você recebeu uma mensagem nova.</div>
+							</div>
+						</li>
+						<!-- END timeline item -->
+						<!-- timeline item -->
+						<li><i class="fa fa-user bg-aqua"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-clock-o"></i> 5 mins
+									ago</span>
+								<h3 class="timeline-header no-border">
+									<a href="#">Afiliado Novo</a>
+								</h3>
+								<div class="timeline-body">Você recebeu um afiliado novo.
+								</div>
+							</div></li>
+						<!-- timeline time label -->
+						<li class="time-label"><span class="bg-green"> 3 Jan.
+								2014 </span></li>
+						<!-- /.timeline-label -->
+						<!-- timeline item -->
+						<li><i class="fa fa-camera bg-purple"></i>
+
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-clock-o"></i> 2 days
+									ago</span>
+
+								<h3 class="timeline-header">
+									<a href="#">Mídia Nova</a>
+								</h3>
+								<div class="timeline-body">Você atualizou sua fotos.</div>
+							</div></li>
+						<!-- END timeline item -->
+						<!-- timeline item -->
+						<li><i class="fa fa-bell-o bg-yellow"></i>
+
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-clock-o"></i> 2 days
+									ago</span>
+
+								<h3 class="timeline-header">
+									<a href="#">Avisos</a>
+								</h3>
+								<div class="timeline-body">Você recebeu novos avisos.</div>
+							</div></li>
+						<!-- END timeline item -->
+						<li><i class="fa fa-clock-o bg-gray"></i></li>
+					</ul>
+				</div>
+				<div class="box-footer no-padding"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="box box-success">
+				<div class="box-header with-border">
+					<h3 class="box-title">Últimas mensagens</h3>
+				</div>
+				<div class="box-body">
+					<div class="direct-chat-messages">
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Afiliado 01</span> <span
+									class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<img class="direct-chat-img" src="assets/img/user.png"
+								alt="Message User Image">
+							<!-- /.direct-chat-img -->
+							<div class="direct-chat-text">Is this template really for
+								free? That's unbelievable!</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Afiliado 02</span> <span
+									class="direct-chat-timestamp pull-right">10 Feb 4:00 am</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<img class="direct-chat-img" src="assets/img/user.png"
+								alt="Message User Image">
+							<!-- /.direct-chat-img -->
+							<div class="direct-chat-text">Is this template really for
+								free? That's unbelievable!</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Afiliado 03</span> <span
+									class="direct-chat-timestamp pull-right">03 Mar 1:35 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<img class="direct-chat-img" src="assets/img/user.png"
+								alt="Message User Image">
+							<!-- /.direct-chat-img -->
+							<div class="direct-chat-text">Is this template really for
+								free? That's unbelievable!</div>
+							<!-- /.direct-chat-text -->
+						</div>
+					</div>
+				</div>
+				<div class="box-footer no-padding">
+					<a href="mensagens.html" class="btn btn-success btn-block btn-sm">Ver
+						todas</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box box-warning">
+				<div class="box-header with-border">
+					<h3 class="box-title">Últimos Recados</h3>
+				</div>
+				<div class="box-body">
+					<div class="direct-chat-messages">
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left"> Maria Gonzales
+								</span> <span class="direct-chat-timestamp pull-right"> 8:03 PM
+									Today </span>
+							</div>
+							<div>It is a long established fact that a reader will be
+								distracted by the readable content of a page when looking at its
+								layout.</div>
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left"> Luna Stark </span> <span
+									class="direct-chat-timestamp pull-right"> 8:03 PM Today
+								</span>
+							</div>
+							<div>It is a long established fact that a reader will be
+								distracted by the readable content of a page when looking at its
+								layout.</div>
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left"> Nora Havisham </span>
+								<span class="direct-chat-timestamp pull-right"> 8:03 PM
+									Today </span>
+							</div>
+							<div>The point of using Lorem Ipsum is that it has a
+								more-or-less normal distribution of letters, as opposed to using
+								'Content here, content here', making it look like readable
+								English</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-footer no-padding">
+					<a href="recados.html" class="btn btn-warning btn-block btn-sm">Ver
+						todos</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box box-danger">
+				<div class="box-header with-border">
+					<h3 class="box-title">Últimos Avisos</h3>
+				</div>
+				<div class="box-body">
+					<div class="direct-chat-messages">
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Novo Afiliado</span> <span
+									class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<div class="direct-chat-img">
+								<i class="fa fa-users text-aqua"></i>
+							</div>
+							<div class="">Joanna Nogueira é um novo Afiliado.</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Novo Afiliado</span> <span
+									class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<div class="direct-chat-img">
+								<i class="fa fa-user text-green"></i>
+							</div>
+							<div class="">Você atualizou seus dados do Perfil.</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Erro no
+									Pagamento</span> <span class="direct-chat-timestamp pull-right">23
+									Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<div class="direct-chat-img">
+								<i class="fa fa-warning text-yellow"></i>
+							</div>
+							<div class="">Gustavo Mello não compeltou seu pagamento.</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Pagamento de
+									Afiliado</span> <span class="direct-chat-timestamp pull-right">23
+									Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<div class="direct-chat-img">
+								<i class="fa fa-shopping-cart text-green"></i>
+							</div>
+							<div class="">Fernando Carlos efetuou o pagamento.</div>
+							<!-- /.direct-chat-text -->
+						</div>
+						<div class="direct-chat-msg">
+							<div class="direct-chat-info clearfix">
+								<span class="direct-chat-name pull-left">Afiliado
+									Inativado</span> <span class="direct-chat-timestamp pull-right">23
+									Jan 2:00 pm</span>
+							</div>
+							<!-- /.direct-chat-info -->
+							<div class="direct-chat-img">
+								<i class="fa fa-users text-red"></i>
+							</div>
+							<div class="">Enrique Alves se tornou Inativo.</div>
+							<!-- /.direct-chat-text -->
+						</div>
+					</div>
+				</div>
+				<div class="box-footer no-padding">
+					<a href="avisos.html" class="btn btn-danger btn-block btn-sm">Ver
+						todos</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-default">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Título Vídeo</h4>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" src="assets/img/750x450.png" alt="Vídeo 02">
+				</div>
+				<div class="modal-footer">
+					<p>Uma breve descrição se preciso!</p>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+
+</section>
+<!-- /.content -->

@@ -1,0 +1,295 @@
+<!-- Main Header -->
+<header class="main-header">
+
+	<!-- Logo -->
+	<a href="index.html" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
+		<span class="logo-mini"><span class="divulplace-brand-sgl"></span></span>
+		<!-- logo for regular state and mobile devices --> <span
+		class="divulplace-brand"></span>
+	</a>
+
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top" role="navigation">
+		<!-- Sidebar toggle button-->
+		<a href="#" class="sidebar-toggle" (click)="onToggleMenu()"
+			role="button"> <span class="sr-only">Toggle navigation</span>
+		</a>
+		<!-- Navbar Right Menu -->
+
+		<div class="navbar-custom-menu">
+			<ul class="nav navbar-nav">
+				<!-- Messages: style can be found in dropdown.less-->
+				<li class="dropdown messages-menu" dropdown>
+					<!-- Menu toggle button --> <a href id="msg-link" dropdownToggle
+					(click)="false" aria-controls="msg-link-dropdown"> <i
+						class="fa fa-envelope-o"></i> <span class="label label-success">4</span></a>
+					<ul id="msg-link-dropdown" *dropdownMenu class="dropdown-menu"
+						role="menu" aria-labelledby="msg-link">
+						<li class="header">Você tem 4 mensagens</li>
+						<li>
+							<!-- inner menu: contains the messages -->
+							<ul class="menu">
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">
+											<!-- User Image -->
+											<img src="assets/img/user.png" class="img-circle"
+												alt="User Image">
+										</div> <!-- Message title and timestamp -->
+										<h4>
+											Afiliado 001 <small><i class="fa fa-clock-o"></i> 5
+												mins</small>
+										</h4> <!-- The message -->
+										<p>Bem vindo meu amigo!</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">
+											<!-- User Image -->
+											<img src="assets/img/user.png" class="img-circle"
+												alt="User Image">
+										</div> <!-- Message title and timestamp -->
+										<h4>
+											Afiliado 002 <small><i class="fa fa-clock-o"></i> 10
+												mins</small>
+										</h4> <!-- The message -->
+										<p>Você subiu de Grau?</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">
+											<!-- User Image -->
+											<img src="assets/img/user.png" class="img-circle"
+												alt="User Image">
+										</div> <!-- Message title and timestamp -->
+										<h4>
+											Afiliado 003 <small><i class="fa fa-clock-o"></i> 2
+												horas</small>
+										</h4> <!-- The message -->
+										<p>Sou novo aqui, você pode me ajudar?</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">
+											<!-- User Image -->
+											<img src="assets/img/user.png" class="img-circle"
+												alt="User Image">
+										</div> <!-- Message title and timestamp -->
+										<h4>
+											Afiliado 004 <small><i class="fa fa-clock-o"></i> 1
+												dia</small>
+										</h4> <!-- The message -->
+										<p>Acabei de atualizar meu portfólio!</p>
+								</a>
+								</li>
+								<!-- end message -->
+							</ul> <!-- /.menu -->
+						</li>
+						<li class="footer"><a href="mensagens.html">Ver todas</a></li>
+					</ul>
+				</li>
+				<!-- /.messages-menu -->
+				<!-- Tasks Menu -->
+				<li class="dropdown messages-menu" dropdown>
+					<!-- Menu Toggle Button --> <a href id="aviso-link" dropdownToggle
+					(click)="false" aria-controls="aviso-link-dropdown"><i
+						class="fa fa-paper-plane-o"></i> <span class="label label-warning">9</span></a>
+					<ul id="aviso-link-dropdown" *dropdownMenu class="dropdown-menu"
+						role="menu" aria-labelledby="aviso-link">
+						<li class="header">Você tem 9 recados</li>
+						<li>
+							<!-- inner menu: contains the messages -->
+							<ul class="menu">
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">01</div> <!-- Message title and timestamp -->
+										<h4>
+											Maria Gonzales <small><i class="fa fa-clock-o"></i> 5
+												mins</small>
+										</h4> <!-- The message -->
+										<p>Gostaria de saber...</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">02</div> <!-- Message title and timestamp -->
+										<h4>
+											Luna Stark <small><i class="fa fa-clock-o"></i> 10
+												mins</small>
+										</h4> <!-- The message -->
+										<p>Qual é a margem de...</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">03</div> <!-- Message title and timestamp -->
+										<h4>
+											Nora Havisham <small><i class="fa fa-clock-o"></i> 2
+												horas</small>
+										</h4> <!-- The message -->
+										<p>Você pode me ajudar?</p>
+								</a>
+								</li>
+								<li>
+									<!-- start message --> <a href="#">
+										<div class="pull-left">04</div> <!-- Message title and timestamp -->
+										<h4>
+											Filipe <small><i class="fa fa-clock-o"></i> 1 dia</small>
+										</h4> <!-- The message -->
+										<p>Descobri que no final do m�s...</p>
+								</a>
+								</li>
+								<!-- end message -->
+							</ul> <!-- /.menu -->
+						</li>
+						<li class="footer"><a href="recados.html">Ver todas</a></li>
+					</ul>
+				</li>
+
+				<!-- Notifications Menu -->
+				<li class="dropdown notifications-menu" dropdown><a href
+					id="basic-link" dropdownToggle (click)="false"
+					aria-controls="basic-link-dropdown"><i class="fa fa-bell-o"></i>
+						<span class="label label-danger">10</span></a>
+					<ul id="basic-link-dropdown" *dropdownMenu  class="dropdown-menu"
+						role="menu" aria-labelledby="basic-link">
+						<li class="header">Você têm 10 avisos</li>
+						<li>
+							<!-- Inner Menu: contains the notifications -->
+							<ul class="menu">
+								<li>
+									<!-- start notification --> <a href="#"> <i
+										class="fa fa-users text-aqua"></i> 2 afiliados novos hoje
+								</a>
+								</li>
+								<!-- end notification -->
+								<li>
+									<!-- start notification --> <a href="#"> <i
+										class="fa fa-users text-red"></i> 2 afiliados saíram hoje
+								</a>
+								</li>
+								<!-- end notification -->
+								<li>
+									<!-- start notification --> <a href="#"> <i
+										class="fa fa-shopping-cart text-green"></i> 4 afiliados
+										pagaram hoje
+								</a>
+								</li>
+								<!-- end notification -->
+								<li>
+									<!-- start notification --> <a href="#"> <i
+										class="fa fa-warning text-yellow"></i> Erro no seu pagamento
+								</a>
+								</li>
+								<!-- end notification -->
+								<li>
+									<!-- start notification --> <a href="#"> <i
+										class="fa fa-user text-green"></i> Você atualizou seu perfil
+								</a>
+								</li>
+								<!-- end notification -->
+							</ul>
+						</li>
+						<li class="footer"><a href="avisos.html">Ver todos</a></li>
+					</ul></li>
+
+				<!-- User Account Menu -->
+				<li class="dropdown user user-menu" dropdown>
+					<!-- Menu Toggle Button --> 
+					<a href="#" class="dropdown-toggle" id="usuario-link"
+					dropdownToggle (click)="false"
+					aria-controls="usuario-link-dropdown"> <!-- The user image in the navbar--> <img
+						src="assets/img/user.png" class="user-image" alt="User Image"> <!-- hidden-xs hides the username on small devices so only the image appears. -->
+						<span class="hidden-xs">Nome Usuário</span>
+				</a>
+					<ul id="usuario-link-dropdown" class="dropdown-menu"
+						role="menu" aria-labelledby="usuario-link">
+						<!-- Widget: user widget style 1 -->
+						<div class="box box-widget widget-user"
+							style="margin-bottom: 0px;">
+							<!-- Add the bg color to the header using any of the bg-* classes -->
+							<div class="widget-user-header bg-aqua-active">
+								<h3 class="widget-user-username">Nome Usuário</h3>
+								<h5 class="widget-user-desc">
+									Promoter Start <span class="pull-right"> <i
+										class="fa fa-star text-yellow"></i> <i
+										class="fa fa-star text-yellow"></i> <i
+										class="fa fa-star text-yellow"></i> <i
+										class="fa fa-star-o text-yellow"></i> <i
+										class="fa fa-star-o text-yellow"></i>
+									</span>
+								</h5>
+							</div>
+							<div class="widget-user-image">
+								<img class="img-circle" src="assets/img/user.png" alt="User Avatar">
+							</div>
+							<div class="box-footer">
+								<div class="row">
+									<div class="col-sm-4 border-right">
+										<div class="description-block">
+											<h5 class="description-header">1.600</h5>
+											<span class="description-text">Disponível</span>
+										</div>
+										<!-- /.description-block -->
+									</div>
+									<!-- /.col -->
+									<div class="col-sm-4 border-right">
+										<div class="description-block">
+											<h5 class="description-header">800</h5>
+											<span class="description-text">Visitas</span>
+										</div>
+										<!-- /.description-block -->
+									</div>
+									<!-- /.col -->
+									<div class="col-sm-4">
+										<div class="description-block">
+											<h5 class="description-header">100</h5>
+											<span class="description-text">Afiliados</span>
+										</div>
+										<!-- /.description-block -->
+									</div>
+									<!-- /.col -->
+								</div>
+								<!-- /.row -->
+							</div>
+						</div>
+						<!-- Menu Footer-->
+						<li class="user-footer">
+							<div class="pull-left">
+								<a href="#" class="btn btn-default btn-flat">Portfólio</a>
+							</div>
+							<div class="pull-right">
+								<a href="../index.html" class="btn btn-default btn-flat">Sair</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+  <app-menu-navbar></app-menu-navbar>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<section class="content-header">
+		<h1>
+        Início
+        <small>Bem vindo!</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li class="active"><i class="fa fa-home"></i> Início</li>
+      </ol>
+	</section>
+	
+	<app-painel-controle></app-painel-controle>
+	
+  </div>
+
+  <!-- Main Footer -->
+  <app-footer-navbar></app-footer-navbar>

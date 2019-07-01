@@ -1,0 +1,84 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+
+		<!-- Sidebar user panel (optional) -->
+		<div class="user-panel">
+			<div class="pull-left image">
+				<img src="assets/img/user.png" class="img-circle" alt="User Image">
+			</div>
+			<div class="pull-left info">
+				<p>Nome Usuário</p>
+				<!-- Status -->
+				<div class="dropdown navegacao-usuario" dropdown>
+					<a href="#" dropdownToggle (click)="false" class="dropdown-toggle"
+						type="button" id="status-link"
+						aria-controls="status-link-dropdown"> <i
+						class="fa fa-comments text-success"></i> Online <span
+						class="caret"></span>
+					</a>
+					<ul d="status-link-dropdown" *dropdownMenu class="dropdown-menu"
+						role="menu" aria-labelledby="status-link">
+						<li><a href="#"><i class="fa fa-comments text-success"></i>Online</a></li>
+						<li><a href="#"><i class="fa fa-ban text-danger"></i>Não-incomodar</a></li>
+						<li><a href="#"><i class="fa fa-power-off text-warning"></i>Ocupado</a></li>
+						<li><a href="#"><i class="fa fa-dot-circle-o"></i>Mostrar
+								Offline</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sidebar Menu -->
+		<ul class="sidebar-menu" data-widget="tree">
+			<li class="header">MENU</li>
+			<!-- Optionally, you can add icons to the links -->
+			<li><a href="index.html"><i class="fa fa-home"></i> <span>Início</span></a></li>
+			<li class="active"><a href="#"><i class="fa fa-dashboard"></i>
+					<span>Painel de Controle</span></a></li>
+			<li><a href="perfil.html"><i class="fa fa-user-circle"></i>
+					<span>Perfil</span></a></li>
+			<li class="header">SERVI�OS</li>
+			<li><a href="portifolio.html"><i
+					class="fa fa-address-book-o"></i> <span>Portfólio</span></a></li>
+			<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
+			<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão
+						de Visitas</span></a></li>
+			<li><a href="videos.html"><i
+					class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
+			<li class="header">FINCANCEIRO</li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
+			<li><a href="monetizacao.html"><i class="fa fa-money"></i> <span>Promoter</span></a></li>
+			<li><a href="conta_bancaria.html"><i class="fa fa-bank"></i>
+					<span>Conta</span></a></li>
+			<li class="header">CORRESPONDÊNCIA</li>
+			<li><a href="mensagens.html"> <i class="fa fa-envelope-o"></i>
+					<span>Mensagens</span> <span class="pull-right-container"> <small
+						class="label pull-right bg-green">4</small>
+				</span>
+			</a></li>
+			<li><a href="recados.html"> <i class="fa fa-paper-plane-o"></i>
+					<span>Recados</span> <span class="pull-right-container"> <small
+						class="label pull-right bg-yellow">9</small>
+				</span>
+			</a></li>
+			<li><a href="avisos.html"> <i class="fa fa-bell-o"></i> <span>Avisos</span>
+					<span class="pull-right-container"> <small
+						class="label pull-right bg-red">10</small>
+				</span>
+			</a></li>
+			<li class="header">PAGAMENTO</li>
+			<li class="header"><a href="#">
+					<div class="col-xs-6 col-md-3 text-center">
+						<input type="text" class="knob" value="10" data-linecap="round"
+							data-width="90" data-height="90" data-min="1" data-max="31"
+							data-fgColor="#3c8dbc" data-readonly="true">
+					</div>
+			</a></li>
+		</ul>
+		<!-- /.sidebar-menu -->
+	</section>
+	<!-- /.sidebar -->
+</aside>
