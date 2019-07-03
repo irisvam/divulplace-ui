@@ -1,0 +1,71 @@
+{
+	"posts": [
+		{
+			"id": 1,
+			"title": "json-server",
+			"author": "typicode"
+		}
+	],
+	"comments": [
+		{
+			"id": 1,
+			"body": "some comment",
+			"postId": 1
+		}
+	],
+	"profile": {
+		"name": "typicode"
+	},
+	"mensagens": [
+		{
+			"id": 1,
+			"nome": "Afiliado 001",
+			"mensagem": "Bem vindo meu amigo!",
+			"tempo": "5 mins"
+		},
+		{
+			"id": 2,
+			"nome": "Afiliado 002",
+			"mensagem": "Você subiu de Grau?",
+			"tempo": "10 mins"
+		},
+		{
+			"id": 3,
+			"nome": "Afiliado 003",
+			"mensagem": "Sou novo aqui, você pode me ajudar?",
+			"tempo": "2 horas"
+		},
+		{
+			"id": 4,
+			"nome": "Afiliado 004",
+			"mensagem": "Acabei de atualizar meu portfólio!",
+			"tempo": "1 dia"
+		}
+	],
+	"recados": [
+		{
+			"id": 1,
+			"nome": "Maria Gonzales",
+			"mensagem": "Gostaria de saber...",
+			"tempo": "5 mins"
+		},
+		{
+			"id": 2,
+			"nome": "Luna Stark",
+			"mensagem": "Qual é a margem de...",
+			"tempo": "10 mins"
+		},
+		{
+			"id": 3,
+			"nome": "Nora Havisham",
+			"mensagem": "Você pode me ajudar?",
+			"tempo": "2 horas"
+		},
+		{
+			"id": 4,
+			"nome": "Filipe",
+			"mensagem": "Descobri que no final do mês...",
+			"tempo": "1 dia"
+		}
+	]
+}
