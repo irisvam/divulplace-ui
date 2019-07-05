@@ -24,12 +24,15 @@
         <!-- Messages: style can be found in dropdown.less-->
         <li class="dropdown messages-menu" dropdown>
           <!-- Menu toggle button -->
-          <a href id="msg-link" dropdownToggle (click)="false" aria-controls="msg-link-dropdown">
+          <a href id="msg-link" dropdownToggle (click)="onAtualizarMensagens()" aria-controls="msg-link-dropdown">
             <i class="fa fa-envelope-o"></i>
-            <span class="label label-success">4</span>
+            <span class="label label-success">{{ qtdeMensagem }}</span>
           </a>
           <ul id="msg-link-dropdown" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="msg-link">
-            <li class="header">Você tem 4 mensagens</li>
+            <li class="header">
+              <span *ngIf="0 < qtdeMensagem">Você tem {{ qtdeMensagem }} mensagens</span>
+              <span *ngIf="null == qtdeMensagem || 0 >= qtdeMensagem">Você não tem novas mensagens</span>
+            </li>
             <li>
               <!-- inner menu: contains the messages -->
               <ul class="menu">
@@ -57,12 +60,15 @@
         <!-- Tasks Menu -->
         <li class="dropdown messages-menu" dropdown>
           <!-- Menu Toggle Button -->
-          <a href id="aviso-link" dropdownToggle (click)="false" aria-controls="aviso-link-dropdown">
+          <a href id="aviso-link" dropdownToggle (click)="onAtualizarRecados()" aria-controls="aviso-link-dropdown">
             <i class="fa fa-paper-plane-o"></i>
-            <span class="label label-warning">9</span>
+            <span class="label label-warning">{{ qtdeRecado }}</span>
           </a>
           <ul id="aviso-link-dropdown" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="aviso-link">
-            <li class="header">Você tem 9 recados</li>
+            <li class="header">
+              <span *ngIf="0 < qtdeRecado">Você tem {{ qtdeRecado }} recados</span>
+              <span *ngIf="null == qtdeRecado || null >= qtdeRecado">Você não tem novos recados</span>
+            </li>
             <li>
               <!-- inner menu: contains the messages -->
               <ul class="menu">

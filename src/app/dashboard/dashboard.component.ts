@@ -3,7 +3,8 @@ import { RecadoService } from '../notificacoes/recado.service';
 import { Recado } from '../model/recado';
 import { MensagemService } from '../notificacoes/mensagem.service';
 import { Mensagem } from '../model/mensagem';
-import { Observable } from 'rxjs';
+import { Observable, empty } from 'rxjs';
+import { tap, catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,7 +17,10 @@ export class DashboardComponent implements OnInit {
   
   @Output() toggleMenu = new EventEmitter();
 
+  qtdeRecado: number;
   recados$: Observable<Recado[]>;
+
+  qtdeMensagem: number;
   mensagens$: Observable<Mensagem[]>;
   
   constructor(
@@ -24,9 +28,32 @@ export class DashboardComponent implements OnInit {
     private serviceMensagem: MensagemService) { }
 
   ngOnInit() {
+    this.onAtualizarRecados();
+    this.onAtualizarMensagens();
+  }
 
-    this.recados$ = this.serviceRecado.list();
-    this.mensagens$ = this.serviceMensagem.list();
+  onAtualizarRecados() {
+    this.recados$ = this.serviceRecado.list().pipe(
+      tap(dados => this.qtdeRecado = dados.length),
+      catchError(error => {
+        console.error(error);
+        return empty();
+      })
+    );
+
+    return false;
+  }
+
+  onAtualizarMensagens() {
+    this.mensagens$ = this.serviceMensagem.list().pipe(
+      tap(dados => this.qtdeMensagem = dados.length),
+      catchError(error => {
+        console.error(error);
+        return empty();
+      })
+    );
+
+    return false;
   }
   
   onToggleMenu() {
